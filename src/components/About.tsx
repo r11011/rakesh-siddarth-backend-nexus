@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   return (
@@ -29,11 +30,12 @@ const About = () => {
           </div>
           
           <div className="relative group">
-            <div className="bg-portfolio-green/20 w-full h-72 rounded-lg flex items-center justify-center overflow-hidden border-2 border-portfolio-green/20">
-              <div className="text-portfolio-green text-center p-4">
-                <p className="text-sm">Profile Image</p>
-                <p className="text-xs mt-2">(Add your photo here)</p>
-              </div>
+            <div className="bg-portfolio-navy w-full h-80 rounded-lg flex items-center justify-center overflow-hidden border-2 border-portfolio-green/30">
+              <img 
+                src="/lovable-uploads/e918617a-5385-4859-8881-3b66b6385b4f.png" 
+                alt="Rakesh Siddarth" 
+                className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+              />
             </div>
           </div>
         </div>
