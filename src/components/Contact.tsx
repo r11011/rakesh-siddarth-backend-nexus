@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
             variant="outline"
             asChild
           >
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/srrakesh/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5 mr-2" />
               LinkedIn
             </a>
@@ -44,9 +44,20 @@ const Contact = () => {
             variant="outline"
             asChild
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/r11011/" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 mr-2" />
               GitHub
+            </a>
+          </Button>
+          
+          <Button 
+            className="bg-transparent text-portfolio-green border border-portfolio-green hover:bg-portfolio-green/10 py-6 px-8 space-x-2 w-full sm:w-auto"
+            variant="outline"
+            asChild
+          >
+            <a href="tel:+919620447336">
+              <Phone className="h-5 w-5 mr-2" />
+              Call
             </a>
           </Button>
         </div>
